@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
+
+body{
+    font-family: 
+                    'Nunito Sans'
+                    , Arial
+                    ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1256px;
+    height: 83px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0px;
+    outline: 0px;
+    color: white;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color_1{
+    color: #E3B873;
+}
+
+.uc{
+    text-transform: uppercase;
+}
+
+/*------------------------------------------------------------*/
+/* Header */
+/*------------------------------------------------------------*/
+    header{
+        background: #131313;
+    }
+
+    /* .header-content{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        align-items: center;
+    } */
+
+    .logo{
+        font-style: normal;
+        width: 180px;
+        /* color: #E3B873; */
+    }
+
+    /* .container_nav{
+        margin: 0 0;
+    } */
+
+    .nav{
+        width: 582px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_i a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav_i_selected a{
+        text-decoration: none;
+        color: #E3B873;
+    }
+
+
+    .number{
+        text-align: right;
+        text-decoration-line: underline;
+        width: 126px;
+        /* color: #E3B873; */
+    }
+
+    .b_req{
+        width: 161px;
+        height: 37px;
+        font-style: italic;
+        /* padding: 13px 33px; */
+    }
+
+/*------------------------------------------------------------*/
+/* MAIN */
+/*------------------------------------------------------------*/
+    .bg_1{
+        background-image: url(../images/image\ 4.3.jpg);
+        background-size: cover;
+        height: 707px;
+        /* padding-top: 194px; 
+        padding-left: 134px; */
+        /*627px 208px */
+        position: relative;
+    }
+    .bg1_overlay{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top:0;
+        right: 0;
+        left:0;
+        bottom:0;
+        padding-top: 194px; 
+        padding-left: 134px;
+    }
+
+    .title{
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 53px;
+        position: relative;
+        /* text-transform: uppercase; */
+
+        color: #FFFFFF;
+    }
+    
+    .title_container{ 
+        width: 676.11px;
+        height: 305px;
+        margin: 0;
+        display: flex;
+        flex-direction:column;
+       justify-content: space-between;
+    }
+
+    .title_desc{ 
+        Width: 504px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 36px;
+        color: white;
+    }
+
+    .b_title{
+        width: 207px;
+        height: 51px;
+    }
+
+    .b_title_1{
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        background: transparent;
+    }
+
+    .title_buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 424px;
+    }
+
