@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
 body{
     font-family: 
                     'Nunito Sans'
@@ -11,10 +13,16 @@ body{
     font-size: 11px;
     line-height: 15px;
     margin: 0;
+    color: white;
 }
 
 body *{
     box-sizing: border-box;
+}
+
+.section{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container{
@@ -34,6 +42,7 @@ body *{
     border: 0px;
     outline: 0px;
     color: white;
+    font-style: italic;
         
     display: flex;
     justify-content: center;
@@ -48,6 +57,24 @@ body *{
     text-transform: uppercase;
 }
 
+.title{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.subtitle{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #181818;
+}
 /*------------------------------------------------------------*/
 /* Header */
 /*------------------------------------------------------------*/
@@ -102,15 +129,17 @@ body *{
     .b_req{
         width: 161px;
         height: 37px;
-        font-style: italic;
         /* padding: 13px 33px; */
     }
 
 /*------------------------------------------------------------*/
 /* MAIN */
 /*------------------------------------------------------------*/
-    .bg_1{
-        background-image: url(../images/image\ 4.3.jpg);
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* section 1 */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .s1{
+        background-image: url(../images/s1\ bg.jpg);
         background-size: cover;
         height: 707px;
         /* padding-top: 194px; 
@@ -118,40 +147,27 @@ body *{
         /*627px 208px */
         position: relative;
     }
-    .bg1_overlay{
+    .s1_overlay{
         content: '';
         background-color: rgba(0, 0, 0, 0.7);
         position: absolute;
-        top:0;
+        top: 0;
         right: 0;
-        left:0;
-        bottom:0;
-        padding-top: 194px; 
-        padding-left: 134px;
-    }
-
-    .title{
-        font-family: 'Yeseva One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 53px;
-        position: relative;
-        /* text-transform: uppercase; */
-
-        color: #FFFFFF;
+        left: 0;
+        bottom: 0;
+        padding: 194px 627px 208px 134px;
     }
     
-    .title_container{ 
+    .s1_title_container{ 
         width: 676.11px;
         height: 305px;
         margin: 0;
         display: flex;
-        flex-direction:column;
-       justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .title_desc{ 
+    .s1_title_desc{ 
         Width: 504px;
         font-weight: 400;
         font-size: 22px;
@@ -159,12 +175,21 @@ body *{
         color: white;
     }
 
-    .b_title{
+    .s1_title{
+        font-size: 40px;
+        line-height: 53px;
+        /* line-height: 115%; */
+        vertical-align: top;
+    
+        color: #FFFFFF;
+    }
+
+    .s1_button1{
         width: 207px;
         height: 51px;
     }
 
-    .b_title_1{
+    .s1_button2{
         border: 1px solid #FFFFFF;
         border-radius: 2px;
         background: transparent;
@@ -175,4 +200,223 @@ body *{
         justify-content: space-between;
         width: 424px;
     }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* section_2 */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .s2{
+        background: #131313;
+        height: 1074px;
+    }
+    
+    .s2_container{
+        width: 1171px;
+        height: 552.28px;
+        /* left: 132px;
+        top: 107px; */
+        padding: 107px 134px 414px 134px;
+    }
 
+    .s2_nav{
+        width: 623px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-left: 492px; 
+        padding: 0;
+        font-size: 14px;
+        Line-height: 19.4px;
+    }
+    
+    .s2_nav_i a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .s2_line{
+        margin-top: 4.6px;
+        background-color: #E3B873;
+        width: 193.94px;
+        height: 1px;
+    }
+    
+    /*------------------------------------------------------------*/
+    /* s2_main */
+    /*------------------------------------------------------------*/
+    .s2_main{
+        margin-left: 0;
+        margin-top: 45px;
+        display: flex;
+        /* margin-left: 134px; */
+    }
+
+    .s2_prj{
+        /* height: 482px;
+        width: 442px;
+        margin-right: 50px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .s2_title{
+        width: 253px;
+        height: 66px;
+        font-size: 27px;
+        line-height: 37.42px;
+        /* line-height: 115%; */
+        vertical-align: top;
+        letter-spacing: -7%;
+        margin: 0;
+        /* color: #FFFFFF; */
+    }
+
+    .s2_i1{
+        background-image: url(../images/s2_i1.png);
+        height: 482px;
+        width: 679px;
+        position: absolute;
+        margin-left: 492px; 
+        background-size: cover;
+    }
+
+    .s2_p{
+        font-size: 14px;
+        line-height: 27px;
+        text-align: left;
+        vertical-align: top;
+        width: 442px;
+        height: 86px;
+        margin-bottom: 42px;
+    }
+
+    .s2_heads{
+        display: grid;
+        grid-template-columns: 190px 252px;
+        grid-template-rows: 107px 107px;
+    }
+    
+    .s2_heads_i{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 9px;
+    }
+
+    .s2_heads_text{
+        font-size: 13px;
+        line-height: 21px;
+    }
+    
+    
+    .s2_prj_nav{
+        width: 205.68px;
+        height: 13.28px;
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: flex-end; */
+        /* align-self: end; */
+        line-height: 13.28px;
+        font-size: 13.28px;
+    }
+
+    .arrow{
+        width: 7.59px;
+        height: 13.28px;
+    }
+    .line{
+        width: 40.51px;
+        height: 1.34px;
+        transform: translateX(+10px) translateY(calc((-13.28px)/2));
+    }
+    .rotate_180{
+        transform: rotate(180deg);
+    }
+    
+    .s2_dots{
+        display: flex;
+        justify-content: space-between;
+        width: 63.78px;
+        height: 13.28px;
+        align-items: center;
+    }
+    
+    .s2_dot{
+        height: 9.57px;
+        width:  9.57px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px; 
+        border-style: solid;
+        border-width: calc(9.57px/2);
+        border-color: transparent;
+    }
+
+    .s2_dot_selected{
+        background-color: rgba(255, 255, 255);
+    }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* section_3 */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .s3{
+        /* background: white; */
+        height: calc(1466px + 324px);
+        margin-top: -324px;
+    }
+
+    .s3_main{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .s3_title_image{
+        margin-top: 12.79px;
+        margin-bottom: 31px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .s3_v_camera{
+        margin-left: 9.47px;
+        margin-right: 7.46px;
+    }
+
+    /* .s3_i1{
+        background-image: url(../images/s3_i1.png);
+    } */
+    .s3_i1{
+        /* filter: grayscale(80%); */
+        filter: brightness(20%);
+    }
+
+    .s3_round{
+        width: 85px;
+        height: 85px;
+        background-color:#E3B873;
+        box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+        border-radius: 50px;
+        margin-top: calc(((434px/2) + (85px/2))*(-1));
+        z-index: 1;
+    }
+
+    .s3_play{
+        height: 28px;
+        width: 28px;
+        font-size: 28px;
+        /* transform: rotate(45deg); */
+        margin-top: calc(((28px/2) + (85px/2))*(-1));
+        margin-left: calc((28px - 22.61px));
+        z-index: 2;
+    }
+    
+    
+
+
+
+    
