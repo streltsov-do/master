@@ -35,18 +35,31 @@ body *{
     align-items: center;
 }
 
-.button{
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    border: 0px;
+.input{
+    border-style: none;
+}
+
+input[type="button"]{
     outline: 0px;
     color: white;
-    font-style: italic;
+    font-family: 'Nunito Sans';
+    padding: 0;
         
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button_style1{
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+}
+.button_border1{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0px;
 }
 
 .color_1{
@@ -75,6 +88,7 @@ body *{
     
     color: #181818;
 }
+
 /*------------------------------------------------------------*/
 /* Header */
 /*------------------------------------------------------------*/
@@ -184,7 +198,7 @@ body *{
         color: #FFFFFF;
     }
 
-    .s1_button1{
+    .s1_button{
         width: 207px;
         height: 51px;
     }
@@ -367,54 +381,110 @@ body *{
         font-weight: 400;
         font-size: 20px;
         line-height: 28px;
-        text-align: center;
+        /* text-align: center; */
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .s3_title_image{
-        margin-top: 12.79px;
-        margin-bottom: 31px;
-        display: flex;
-        align-items: center;
+        .s3_title_image{
+            margin-top: 12.79px;
+            margin-bottom: 31px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .s3_v_camera{
+            margin-left: 9.47px;
+            margin-right: 7.46px;
+        }
+
+        /* .s3_i1{
+            background-image: url(../images/s3_i1.png);
+        } */
+        .s3_i1{
+            /* filter: grayscale(80%); */
+            filter: brightness(20%);
+        }
+
+        .s3_round{
+            width: 85px;
+            height: 85px;
+            background-color:#E3B873;
+            box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+            border-radius: 50px;
+            margin-top: calc(((434px/2) + (85px/2))*(-1));
+            z-index: 1;
+        }
+
+        .s3_play{
+            height: 28px;
+            width: 28px;
+            font-size: 28px;
+            /* transform: rotate(45deg); */
+            margin-top: calc(((28px/2) + (85px/2))*(-1));
+            margin-left: calc((28px - 22.61px));
+            margin-bottom: calc((28px/2) + 237.5px);
+            z-index: 2;
+        }
+
+        /* .s3_rectangle{
+            border-radius: 30px;
+            size: 10.54px;
+            width: 55px;
+            color : #E3B873;
+        } */
         
-    }
+        .s3_p{
+            Width: 681px;
+            Height: 130.91px;
+            font-size: 18px;
+            line-height: 37px;
+            text-align: center;
+            margin-bottom: 91.5px;
 
-    .s3_v_camera{
-        margin-left: 9.47px;
-        margin-right: 7.46px;
-    }
+            color: #363636;
+        }
 
-    /* .s3_i1{
-        background-image: url(../images/s3_i1.png);
-    } */
-    .s3_i1{
-        /* filter: grayscale(80%); */
-        filter: brightness(20%);
-    }
+        .s3_form{
+            width: 769px;
+            height: calc(51px + 18px);
+            display: flex;
+            justify-content: space-between;
+        }   
+            .s3_input1{
+                width: calc(231px - 122.2px - 4px);
+            }
+            .s3_input2{
+                width: calc(231px - 126.16px - 4px);
+            }
 
-    .s3_round{
-        width: 85px;
-        height: 85px;
-        background-color:#E3B873;
-        box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
-        border-radius: 50px;
-        margin-top: calc(((434px/2) + (85px/2))*(-1));
-        z-index: 1;
-    }
+            .s3_label{
+                font-size: 13px;
+                line-height: 21px;
+                color: rgba(54, 54, 54, 0.5);
+                /* display: block; */
+            }
+                .s3_label_span{
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #363636;
+                }
+            .s3_rectangle{
+                width: 231px;
+                border: 1px solid rgba(54, 54, 54, 0.3);
+                transform: matrix(1, 0, 0, -1, 0, 0);
+            }
 
-    .s3_play{
-        height: 28px;
-        width: 28px;
-        font-size: 28px;
-        /* transform: rotate(45deg); */
-        margin-top: calc(((28px/2) + (85px/2))*(-1));
-        margin-left: calc((28px - 22.61px));
-        z-index: 2;
-    }
-    
+            .s3_button{
+                width: 200px;
+                height: 51px;
+                font-size: 13px;
+                line-height: 27px;
+                font-style: normal;
+            }
     
 
 
