@@ -25,7 +25,7 @@
                 </nav>
             <!-- </div> -->
             <div class="number color_1">+7 (777) 123-45-67</div>
-            <input type="button" class="b_req button_style1 button_border1 uc" value="request a call">
+            <input type="button" class="s0_button button_style1 button_border1 uc b_styled" value="request a call">
         </div>
     </header>
 
@@ -42,8 +42,8 @@
                     </p>
 
                     <div class ="title_buttons"> 
-                        <input type="button" class="button_style1 button_border1 s1_button uc" value="calculate THE COST">
-                        <input type="button" class="button_style1 s1_button uc s1_button2" value="SUBMIT YOUR APPLICATION">
+                        <input type="button" class="button_style1 button_border1 s1_button uc b_styled" value="calculate THE COST">
+                        <input type="button" class="button_style1 s1_button uc s1_button2 b_styled" value="SUBMIT YOUR APPLICATION">
                     </div>
                 </div>
             </div>
@@ -143,31 +143,108 @@
                                 <br>Leave a request below and you will receive a link to the broadcast.</p>
                 
                 <form class="s3_form">
-                    <div>
-                        <label for="s3_form_input1" class="s3_label">
-                            Name:
-                            <br> <span class="s3_label_span">What is your name:</span>
+                    <div class="s3_form_1">
+                        <div>
+                                <label for="s3_form_input1" class="s3_label1">
+                                    Name:
+                                    <br> <span class="s3_label1_span">What is your name:</span>
+                                </label>
+                            <input class="input s3_input1" name="s3_form_input1" form="s3_form_d1" >
+
+                            <div class="s3_rectangle"></div>
+                        </div>
                         
-                        </label>
-                        <input class="input s3_input1" name="s3_form_input1" form="s3_form_d1" >
-                        <div class="s3_rectangle"></div>
+                        <div>
+                                <label for="s3_form_input2" class="s3_label1">
+                                    Phone:
+                                    <br> <span class="s3_label1_span">Your phone number:</span>
+                                </label>
+                            <input class="input s3_input2" name="s3_form_input2" form="s3_form_d1" >
+
+                            <div class="s3_rectangle"></div>
+                        </div>
+
+                        <button class="s3_button button_border1 uc b_styled" form="s3_form">Submit</button>
                     </div>
                     
-                    <div>
-                        <label for="s3_form_input2" class="s3_label">
-                            Phone:
-                            <br> <span class="s3_label_span">Your phone number:</span>
-                        
-                        </label>
-                        <input class="input s3_input2" name="s3_form_input2" form="s3_form_d1" >
-                        <div class="s3_rectangle"></div>
+
+                    <div class="s3_check_div">
+                        <input type="checkbox" name="s3_check" form="s3_form_d1" class="s3_check">
+                            <label for="s3_check" class="s3_label2">I agree to the processing of personal data</label>
+                    </div>
+                </form>
+                
+                <div class="s3_types">
+                    <div class="s3_types_title title uc">TYPES OF REPAIR</div>
+
+                    <div class="s3_types_img">
+                        <div class="s3_ul_line"></div>
+                        <img src="images/vectors/types.svg">
+                        <div class="s3_ul_line"></div>
+                    </div>
+                </div>
+
+                <div class="s3_view">
+                    <div class="s3_view_block">
+                        <img src="images/s3_view_1.jpg">
+
+                        <div class="s3_view_block_li">
+                            <span class="title s3_ul_title">Redecorating</span>
+                                <ul class="s3_ul">
+                                    <li class="s3_ul_li">Dismantling of old coatings</li>
+                                    <li class="s3_ul_li">Wallpapering</li>
+                                    <li class="s3_ul_li">Painting walls and ceilings</li>
+                                    <li class="s3_ul_li">Laying flooring</li>
+                                    <li class="s3_ul_li">Replacing plumbing</li>
+                                    <li class="s3_ul_li">Replacing sockets and switches</li>
+                                    <li class="s3_ul_li">Replacing doors</li>
+                                </ul>
+                        </div>
+                        <button class="s3_view_button button_border1 title uc b_styled">from 900 rub / m2</button>
                     </div>
 
-                    <input type="button" class="s3_button button_border1 uc" value="Submit">
+                    <div class="s3_view_block">
+                        <img src="images/s3_view_2.jpg">
 
-                </form>
+                        <div class="s3_view_block_li">
+                            <span class="title s3_ul_title">Overhaul</span>
+                                <ul class="s3_ul">
+                                    <li class="s3_ul_li">Dismantling of old coatings        </li>
+                                    <li class="s3_ul_li">Wallpapering                       </li>
+                                    <li class="s3_ul_li">Painting walls and ceilings        </li>
+                                    <li class="s3_ul_li">Laying flooring                    </li>
+                                    <li class="s3_ul_li">Replacing plumbing                 </li>
+                                    <li class="s3_ul_li">Replacing sockets and switches     </li>
+                                    <li class="s3_ul_li">Replacing doors                    </li>
+                                </ul>
+                        </div>
+                        <button class="s3_view_button button_border1 title uc b_styled">from 1800 rub / m2</button>
+                    </div>
+                    
+                    <div class="s3_view_block">
+                        <img src="images/s3_view_3.jpg">
+
+                        <div class="s3_view_block_li">
+                            <span class="title s3_ul_title">Designer Repair</span>
+                                <ul class="s3_ul">
+                                    <li class="s3_ul_li">Dismantling of old coatings</li>
+                                    <li class="s3_ul_li">Wallpapering</li>
+                                    <li class="s3_ul_li">Painting walls and ceilings</li>
+                                    <li class="s3_ul_li">Laying flooring</li>
+                                    <li class="s3_ul_li">Replacing plumbing</li>
+                                    <li class="s3_ul_li">Replacing sockets and switches</li>
+                                    <li class="s3_ul_li">Replacing doors</li>
+                                </ul>
+                        </div>
+                        <button class="s3_view_button button_border1 title uc b_styled">from 4000 rub / m2</button>
+                    </div>
+
+                </div>
             </div>
+            
+
         </section>
+        
     </main>
 
     <footer>

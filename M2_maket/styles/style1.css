@@ -49,6 +49,16 @@ input[type="button"]{
     justify-content: center;
     align-items: center;
 }
+button{
+    outline: 0px;
+    color: white;
+    font-family: 'Nunito Sans';
+    padding: 0;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .button_style1{
     font-style: italic;
@@ -87,6 +97,16 @@ input[type="button"]{
     text-transform: uppercase;
     
     color: #181818;
+}
+
+.b_styled:hover {
+    /* background-color: #E3B873cc; */
+    opacity: 80%;
+}
+
+.b_styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 /*------------------------------------------------------------*/
@@ -140,7 +160,7 @@ input[type="button"]{
         /* color: #E3B873; */
     }
 
-    .b_req{
+    .s0_button{
         width: 161px;
         height: 37px;
         /* padding: 13px 33px; */
@@ -374,6 +394,8 @@ input[type="button"]{
     .s3{
         /* background: white; */
         height: calc(1466px + 324px);
+        /* height: calc(1074px + 1466px);
+        height: calc(1074px + 1466px); */
         margin-top: -324px;
     }
 
@@ -450,42 +472,158 @@ input[type="button"]{
 
         .s3_form{
             width: 769px;
-            height: calc(51px + 18px);
+            height: calc(51px + 18px + 35px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 75.85px;
+
+        }   
+            .s3_form_1{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 35px;
+            }
+                .s3_input1{
+                    width: calc(231px - 122.2px - 4px);
+                }
+                .s3_input2{
+                    width: calc(231px - 126.16px - 4px);
+                }
+
+                .s3_label1{
+                    font-size: 13px;
+                    line-height: 21px;
+                    color: rgba(54, 54, 54, 0.5);
+                    /* display: block; */
+                }
+                    .s3_label1_span{
+                        font-size: 14px;
+                        line-height: 23px;
+                        color: #363636;
+                    }
+                .s3_rectangle{
+                    width: 231px;
+                    border: 1px solid rgba(54, 54, 54, 0.3);
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+                }
+
+                .s3_button{
+                    width: 200px;
+                    height: 51px;
+                    font-size: 13px;
+                    line-height: 27px;
+                    font-style: normal;
+                }
+            
+            .s3_check_div{
+                display: flex;
+                justify-content: center;
+            }
+                .s3_check{
+                    width: 18px;
+                    height: 18px;
+                    margin: 0 8.62px 0 0;
+                    /* color: #E3B873;
+                    accent-color: #9b59b6;
+                    background: #E3B873;
+                    border-radius: 1px; */
+                    /* filter: invert(100%) hue-rotate(18deg) brightness(1.2); */
+                }
+                .s3_label2{
+                    font-size: 14px;
+                    line-height: 163.68%;
+                    color: #181818;
+                    height: 16.24px;
+                }
+        /* end s3_form */
+
+        .s3_types{
+            width: 257px;
+            height: 67px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+            line-height: 28px;
+            color: #181818;
+            margin-bottom: 31px;
+        }
+            .s3_types_img{
+                display: flex;
+                justify-content: space-between;
+                width: 114px;
+            }
+                .s3_ul_line {
+                    margin-top: 14px;
+                    background-color: #E3B873;
+                    width: 32px;
+                    height: 1.54px;
+                }
+                .s3_types_title{
+                    margin-bottom: 13px;
+                }
+        
+        .s3_view{
+            height: 608px;
+            width: 1236px;
             display: flex;
             justify-content: space-between;
-        }   
-            .s3_input1{
-                width: calc(231px - 122.2px - 4px);
-            }
-            .s3_input2{
-                width: calc(231px - 126.16px - 4px);
-            }
-
-            .s3_label{
-                font-size: 13px;
-                line-height: 21px;
-                color: rgba(54, 54, 54, 0.5);
-                /* display: block; */
-            }
-                .s3_label_span{
-                    font-size: 14px;
-                    line-height: 23px;
-                    color: #363636;
+        }
+            .s3_view_block{
+                height: calc(421px + 159px + 54px);
+                width: 392px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }   
+                .s3_view_block_li{
+                    height: 286px;
+                    width: 330px;
+                    background: #FFFFFF;
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                    margin-top: calc(-286px + 159px);
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 25px;
+                    padding-left: 31px;
+                    /* justify-content: center; */
                 }
-            .s3_rectangle{
-                width: 231px;
-                border: 1px solid rgba(54, 54, 54, 0.3);
-                transform: matrix(1, 0, 0, -1, 0, 0);
-            }
-
-            .s3_button{
-                width: 200px;
-                height: 51px;
-                font-size: 13px;
-                line-height: 27px;
-                font-style: normal;
-            }
-    
+                    .s3_ul_title{
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                    }
+                    .s3_ul_div{
+                        padding: 0;
+                    }
+                        .s3_ul{
+                            padding-inline-start: 20px;
+                            margin-top: 13px;
+                            margin-bottom: 23px;
+                            height: 178px;
+                            width: 267px;
+                            /* padding-inline-start: 0px; */
+                        }
+                            .s3_ul_li{
+                                font-size: 13px;
+                                line-height: 
+                                26.6px;
+                                color: #959595;
+                            }
+                .s3_view_button{
+                    height: 54px;
+                    width: 228px;
+                    left: 132px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-left: 32px;
+                    margin-top: calc(28px - 54px);
+                    /* justify-self: flex-start; */
+                    align-self: flex-start;
+                    z-index: 1;
+                }
+                
 
 
 
