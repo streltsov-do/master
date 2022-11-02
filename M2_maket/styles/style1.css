@@ -930,7 +930,7 @@ button{
         /* s5_container */
     /* s5 */
     .s6{
-        height: 1107.11px;
+        height: calc(1107.11px - 110.47px);
         background-color: white;
         position: relative;
     }
