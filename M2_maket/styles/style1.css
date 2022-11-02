@@ -932,6 +932,237 @@ button{
     .s6{
         height: 1107.11px;
         background-color: white;
+        position: relative;
     }
+        .s6_title{
+            font-size: 20px;
+            line-height: 28px;
+            color: #181818;
+            text-align: center;
+            margin-top: 110.47px;
+            margin-bottom: 13.5px;
+        }
+        .s6_title_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24.16px;
+        }
+            .s6_title_rectangle{
+                height: 1.54px;
+                width: 32px;
+                border: 1px solid transparent;
+                background-color : #E3B873;
+                border-radius: 30px;
+                /* color: rgba(255, 255, 255, 0.15) */
+                /* background-color: */
+            }
+            .s6_title_icon_main{
+                position: relative;
+                display: flex;
+                /* align-items: center; */
+                height: 27.62px;
+                width: 33.72px;
+                margin: 0 calc((50px - 33.72px)/2)
+            }
+                .s6_title_icon_img{
+                    height: 20.86px;
+                    width: 33.72px;
+                    position: relative;
+                    margin: 3.27px 0 3.49px 0;
+                }
+                .s6_title_icon_line1{
+                    position: absolute;
+                    /* justify-self: flex-start; */
+                    /* top: 0.18px; */
+                    left:   calc(7.66px  - 0.5px);
+                    bottom: calc(23.83px - 1px);
+                }
+                .s6_title_icon_line2{
+                    position: absolute;
+                    /* top: 0.18px; */
+                    left:   calc(16.24px - 0.5px);
+                    bottom: calc(0.08px - 1px);
+                }
+                .s6_title_icon_arrow1{
+                    /* Width:2.83px;
+                    Height:2.8px; */
+                    position: absolute;
+                    top:  calc(1.81px - 0.5px);
+                    left: calc(23.86px - 0.5px);
+                }
+                .s6_title_icon_arrow2{
+                    position: absolute;
+                    top:  calc(20.83px - 0.5px);
+                    left: calc(4.87px - 0.5px);
+                    transform: rotate(180deg);
+                }
+                .s6_title_round{
+                    width: 0.97px;
+                    height: 0.97px;
+                    border-radius: 2px;
+                    border: 0px;
+                    background: #E3B873;
+                    position: absolute;
+                }   
+                    .s6_round0{
+                        left: 19.04px;
+                    }
+                    .s6_round1{
+                        left: 21.59px;
+                        top: 0.77px;
+                    }
+                    .s6_round2{
+                        left: 23.94px;
+                        top: 2.03px;
+                    }
+                    .s6_round3{
+                        left: 6.78px;
+                        top: 22.93px;
+                    }
+                    .s6_round4{
+                        left: 8.84px;
+                        top: 24.62px;
+                    }
+                    .s6_round5{
+                        left: 11.19px;
+                        top: 25.86px;
+                    }
+                    .s6_round6{
+                        left: 13.74px;
+                        bottom: 0;
+                    }
+            /* s6_icon */
+        /* s6_title_icon */
 
-                              
+        .s6_title_desc{
+            font-size: 18px;
+            line-height: 29px;
+            text-align: center;
+            color: #363636;
+            margin-bottom: 39px;
+        }
+        .s6_customers{
+            height: 455.03497314453125px;
+            width: 1236px;
+            margin: 0 101px 0 103px;
+            display: flex;
+            justify-content: space-between;
+        }
+            .s6_client{
+                height: 455px;
+                width: 376px;
+                position: relative;
+                margin-top: 24px;
+            }
+                .s6_client_info{
+                    /* height: 455px; */
+                    width: 376px;
+                    display: flex;
+                    margin-bottom: 22px;
+                }
+                    .s6_client_photo{
+                        width: 76px;
+                        height: 76px;
+                        margin: 0 23px 0 20px;
+                        position: relative;
+                    }
+                        .s6_client_photo::after{
+                            content: "";
+                            top:    -20px;
+                            left:   -20px;
+                            /* right:  -10px; */
+                            /* bottom: -10px; */
+                            width:  calc(76px);
+                            height: calc(76px);
+                            border-radius: 150px;
+                            border-style: solid;
+                            border-width: 20px;
+                            /* box-sizing: border-box; */
+                            /* background-color: rgb(255, 0, 0); */
+                            z-index: 10;
+                            position: absolute;
+                        }
+                    .s6_client_name{
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #181818;
+                        align-self: center;
+                    }
+                /* s6_client_info */
+
+                .s6_client_review{
+                    margin-left: 20px;
+                    margin-right: 31.92px;
+                    font-size: 13px;
+                    line-height: 180%;
+                    color: #959595;
+                    height: 239px;
+                    width: 324px;
+                    margin-bottom: 40px;
+                }
+
+                .s6_client_rectangle{
+                    height: 54px;
+                    width: 293.75px;
+                    background: #E3B873;
+                    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+                    padding: 11px 0 11.66px 17.36px;
+                    display: flex;
+                    align-items: center;
+                    /* position:absolute;
+                    bottom: 0; */
+                }
+                    .s6_client_rectangle_svg{
+                        height: 31.34px;
+                        width: 32.34px;
+                    }
+                    .s6_client_rectangle_desc{
+                        font-size: 17px;
+                        line-height: 24px;
+                    }
+                    .s6_client_margin1{
+                        margin-right: 15.39px;
+                    }
+                    .s6_client_margin2{
+                        margin-right: 13.99px;
+                    }
+                    .s6_client_rectangle_line{
+                        height: 55.03px;
+                        width: 0.75px;
+                        background-color: white;
+                        /* border: 0.75px solid #FFFFFF; */
+                    }
+                    .s6_client_margin3{
+                        margin-right: 17.26px;
+                    }
+
+                    .s6_client_margin4{
+                        margin-right: 15.02px;
+                    }
+                /* s6_clien_rectangle */
+            /* s6_client */
+        /* s6_customers */
+        .s6_bg{
+            display:flex;
+            position: absolute;
+            /* bottom: 0; */
+            /* margin-top: 347.79px; */
+            top: calc(347.79px - 110.47px);
+        }
+            .s6_bg1{
+                /* position: absolute; */
+                /* left: -398px; */
+            }
+            .s6_bg2{
+                transform: rotateY(3.142rad);
+                /* position: absolute; */
+                /* left: -398px; */
+            }
+
+    /* s6 */
+    .s7{
+        height: 953.9px;
+        background-color: white;
+    }
+                
