@@ -27,13 +27,20 @@ body *{
 
 .container{
     width: 1256px;
-    height: 83px;
     margin: 0 auto;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.container_header{
+    height: 83px;
+}
+.container_footer{
+    height: 133px;
+}
+
 
 .input{
     border-style: none;
@@ -164,6 +171,10 @@ button{
         width: 161px;
         height: 37px;
         /* padding: 13px 33px; */
+    }
+    
+    footer{
+        background: #131313;
     }
 
 /*------------------------------------------------------------*/
@@ -484,11 +495,12 @@ button{
                 justify-content: space-between;
                 margin-bottom: 35px;
             }
-                .s3_input1{
+                /* .s3_input1{
                     width: calc(231px - 122.2px - 4px);
-                }
+                } */
                 .s3_input2{
                     width: calc(231px - 126.16px - 4px);
+                    background-color: transparent;
                 }
 
                 .s3_label1{
@@ -791,6 +803,7 @@ button{
                     justify-content: center;
                     align-items: center; */
                     padding: 19.48px 16px;
+                    position: relative;
                 }
                     .s4_pig{
                         height: 33.04px;
@@ -1152,17 +1165,134 @@ button{
         }
             .s6_bg1{
                 /* position: absolute; */
-                /* left: -398px; */
+                margin-left: -9px;
             }
             .s6_bg2{
                 transform: rotateY(3.142rad);
                 /* position: absolute; */
-                /* left: -398px; */
+                /* margin-right: -50px; */
             }
 
     /* s6 */
     .s7{
-        height: 953.9px;
-        background-color: white;
+        /* z-index: 1; */
+        height: calc(953.9px);
     }
-                
+        .s7_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .s7_form{
+                height: 445.32px;
+                width: 883px;
+                background: #181818;
+                margin-top: -222.66px;
+                z-index: 1;
+                position: relative;
+                padding: 34.4px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 2;
+            }
+                .s7_form_title{
+                    font-size: 20px;
+                    line-height: 28px;
+                    text-align: center;
+                    margin-bottom: 45.8px;
+                }
+                .s7_form_main{
+                    height: 304.71px;
+                    width: 520px;
+                }
+                    .s7_form_info{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 48.76px;
+                    }
+                        .s7_form_rectangle1{
+                            height: 1px;
+                            width: 231px;
+                            background: rgba(255, 255, 255, 0.15);
+                            transform: matrix(1, 0, 0, -1, 0, 0);
+                        }
+                    .s7_form_q{
+                        margin-bottom: 46.46px;
+                    }
+                        .s7_input{
+                            width: calc(516.82px - 96.52px - 4px);
+                            background-color: transparent;
+                        }
+                        .s7_form_rectangle2{
+                            height: 1px;
+                            width: 516.82px;
+                            background: rgba(255, 255, 255, 0.15);
+                            transform: matrix(1, 0, 0, -1, 0, 0);
+                        }
+                        .s7_form_label{
+                            font-size: 14px;
+                            line-height: 163.68%;
+                            color: white;
+                            height: 16.24px;
+                        }
+                        
+                    .s7_button{
+                        border-radius: 0px;
+                        border: 0px;
+                        background: #E3B873;
+                        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+                    }
+            .s7_bg{
+                margin-top: -222.66px;
+                height: 953.9px;
+                width: 1440px;
+                background-image: url(../images/s7_bg.png);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                .s7_bg::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+                }
+                .s7_bg_title{
+                    margin: 274.76px 0 26px 0;
+                    font-size: 20px;
+                    line-height: 28px;
+                    z-index: 2;
+                    text-align: center;
+                    color: #E3B873;
+                }
+                .s7_links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 71px;
+                    height: 28px;
+                    margin-bottom: 43.29px;
+                    z-index: 2;
+                }   
+                    .s7_link{
+                        position: relative;
+                        z-index: 3;
+                        background-color: #E3B873;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 30px;
+                        border-width: 0;
+                        border-style: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                .s7_bg_i1{
+                    z-index: 2;
+                }
