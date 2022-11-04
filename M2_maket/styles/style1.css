@@ -178,6 +178,85 @@ button{
     }
 
 /*------------------------------------------------------------*/
+/* custom checkbox */
+/*------------------------------------------------------------*/
+.checkbox_container{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+        
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 163.68%;
+}
+/* Hide the browser's default checkbox */
+    .checkbox_container input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+/* Create a custom checkbox */
+    .checkbox_custom{
+        position: absolute;
+        height: 18px;
+        width:  18px;
+        top: 0;
+        left: 0;
+        background: white;
+        border-radius: 1px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #E3B873;
+    }
+
+    .checkbox_container:hover input ~ .checkbox_custom {
+        background-color: #ccc;
+    }
+
+    .checkbox_container input:checked ~ .checkbox_custom {
+        background: #E3B873;
+    }
+      
+/* Create the checkbox_custom/indicator (hidden when not checked) */
+    .checkbox_custom::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+/* Show the checkbox_custom when checked */
+    .checkbox_container input:checked ~ .checkbox_custom::after {
+        display: block;
+    }
+    
+/* Style the checkbox_custom/indicator */
+    .checkbox_container .checkbox_custom::after {
+        left: 3px;
+        top: -1px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        /* -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg); */
+        transform: rotate(45deg);
+    }
+
+    .checkbox_container_black{
+        color: #181818;
+    }
+/*------------------------------------------------------------*/
 /* MAIN */
 /*------------------------------------------------------------*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -428,39 +507,51 @@ button{
             align-items: center;
             
         }
+            .s3_v_camera{
+                margin-left: 9.47px;
+                margin-right: 7.46px;
+            }
 
-        .s3_v_camera{
-            margin-left: 9.47px;
-            margin-right: 7.46px;
+        .s3_video{
+            margin-bottom: 62.5px; 
+            height: 434px;
+            width: 817px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            
         }
+            .s3_i1{
+                /* filter: grayscale(80%); */
+            height: 434px;
+            width: 817px;
+                filter: brightness(20%);
+                z-index:1;
+            }
 
-        /* .s3_i1{
-            background-image: url(../images/s3_i1.png);
-        } */
-        .s3_i1{
-            /* filter: grayscale(80%); */
-            filter: brightness(20%);
-        }
-
-        .s3_round{
-            width: 85px;
-            height: 85px;
-            background-color:#E3B873;
-            box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
-            border-radius: 50px;
-            margin-top: calc(((434px/2) + (85px/2))*(-1));
-            z-index: 1;
-        }
-
-        .s3_play{
-            height: 28px;
-            width: 28px;
-            font-size: 28px;
-            /* transform: rotate(45deg); */
-            margin-top: calc(((28px/2) + (85px/2))*(-1));
-            margin-left: calc((28px - 22.61px));
-            margin-bottom: calc((28px/2) + 237.5px);
-            z-index: 2;
+            .s3_button_play{
+                width: 85px;
+                height: 85px;
+                background-color:#E3B873;
+                box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+                border-radius: 50px;
+                border-width: 0;
+                margin-top: calc(((434px/2) + (85px/2))*(-1));
+                z-index: 2;
+            }
+                .s3_play{
+                    height: 28px;
+                    width: 28px;
+                    font-size: 28px;
+                    /* transform: rotate(45deg); */
+                    /* margin-top: calc(((28px/2) + (85px/2))*(-1));
+                    margin-left: calc((28px - 22.61px));*/
+                    z-index: 2;
+                }
+        
+        .s3_hr{
+            margin:0;
         }
 
         /* .s3_rectangle{
@@ -663,38 +754,61 @@ button{
                     /* margin-left: calc((-1)*(378.81px + 75.19px)); */
                     margin: 70.14px 206.19px 0 calc((-1)*(378.81px + 75.19px));
                 }
-                    .s4_b1_desc_i{
+                    
+                    .s4_ul{
+                        height: 473.62px;
+                        width: calc(378.81px + 8px*2);
+                        /* calc(320px + 41.76px + 2*8px + 8px + 17.05px); */
+                        padding-inline-start: 0px;
                         display: flex;
-                        align-items: center;
-                        margin-bottom: 102.24px;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-left: -8px;
                     }
-                        .s4_b1_round{
+                        .s4_ul_li{
+                            font-size: 14px;
+                            line-height: 19px;
+                            height: 39px;
+                            width: calc(378.81px + 8px*2);
+                            /* calc(320px + 41.76px + 2*8px + 8px + 17.05px); */
+                            display: flex;
+                            align-items: center;
+                            color: #363636;
+                        }
+                        .s4_ul_li::before{
+                            content: "01";
                             height: calc(41.76px + 2*8px);
                             width:  calc(41.76px + 2*8px);
+
                             background: #E3B873;
+                            box-sizing: border-box;
                             border: 8px solid #FFFFFF;
                             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
                             border-radius: 30px;
-                            /* box-sizing: content-box; */
+
+                            font-family: 'Yeseva One';
+                            color: white;
                             font-size: 18px;
                             line-height: 25px;
-                            /* text-align: center; */
+
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             margin-right: calc(17.05px - 8px);
-                            margin: -8px calc(17.05px - 8px) 0 -8px
                         }
-                        .s4_b1_txt{
-                            font-size: 14px;
-                            line-height: 19px;
+                        .s4_ul_li_2::before{
+                            content: "02";
+                        }
+                        .s4_ul_li_3::before{
+                            content: "03";
+                        }
+                        /* .s4_ul_li_4::before{
+                            content: "04";
+                        } */
 
-                            height: 39px;
-                            width: 320px;
-                            display: flex;
-                            align-items: center;
-
-                            color: #363636;
+                        /* можно ли использовать просто для стилизации? */
+                        .s4_ul_li[aria-current="4"]::before{
+                            content: "04";
                         }
 
                     .s4_b1_black{
@@ -704,7 +818,7 @@ button{
                         background: #131313;
                         box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 
-                        padding: 0 49px;
+                        padding: 28px 49px 27px 49px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -715,7 +829,6 @@ button{
                             text-align: center;
                             Width: 297px;
                             Height: 47px;
-                            margin-top: 28px;
                             margin-bottom: 39px;
                             /* align-self: center; */
                         }
