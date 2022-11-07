@@ -25,7 +25,7 @@
                 </nav>
                 <a class="number color_1" href="tel:4242">+7 (777) 123-45-67</a>
                 <!-- <input type="button" class="s0_button button_style1 button_border1 uc b_styled" value="request a call"> -->
-                <button class="s0_button button_style1 button_border1 uc b_styled" form="s3_form">request a call</button>
+                <button class="s0_button button_style1 button_border1 uc b_styled" form="s0_form">request a call</button>
             </div>
         </section>
     </header>
@@ -74,10 +74,10 @@
                                 
                                 <div class="s2_hidden_prj_nav">
                                     <button class="s2_hidden_round b_styled">
-                                        <img class="rotate_180" src="images/vectors/s2_arrow.svg">
+                                        <img class="rotate_180" src="images/vectors/sign_more.svg">
                                     </button>
                                     <button class="s2_hidden_round b_styled">
-                                        <img src="images/vectors/s2_arrow.svg">
+                                        <img src="images/vectors/sign_more.svg">
                                     </button>
                                 </div>
 
@@ -106,8 +106,7 @@
 
                             <div class="s2_prj_nav">
                                 <div class="rotate_180"> 
-                                    <a href="#" ><img class="line"      src="images/vectors/line.png"></a>
-                                    <a href="#" ><img class="arrow"     src="images/vectors/arrow.png"></a>
+                                    <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg"></a>
                                 </div>
                                     
                                 
@@ -118,8 +117,7 @@
                                     </div>
 
                                 <div> 
-                                    <a href="#" ><img class="line"      src="images/vectors/line.png"></a>
-                                    <a href="#" ><img class="arrow"     src="images/vectors/arrow.png"></a>
+                                    <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg"></a>
                                 </div>
                             </div>
                         </div>
@@ -153,14 +151,14 @@
                 <p class="s3_p">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                                 <br>Leave a request below and you will receive a link to the broadcast.</p>
                 
-                <form class="s3_form">
+                <form class="s3_form" id="s3_form">
                     <div class="s3_form_inputs s3_hidden_color">
                         <div class="s3_form_inputs_1">
                                 <label for="s3_form_input1" class="s3_label1 s3_hidden_color2">
                                     Name:
                                     <br> <span class="s3_label1_span  s3_hidden_color">What is your name:</span>
                                 </label>
-                            <input class="input s3_input2 s3_hidden_color" name="s3_form_input1" form="s3_form_d1" >
+                            <input class="input s3_input2 s3_hidden_color" name="s3_form_input1" form="s3_form" >
 
                             <div class="s3_rectangle"></div>
                         </div>
@@ -170,7 +168,7 @@
                                     Phone:
                                     <br> <span class="s3_label1_span s3_hidden_color">Your phone number:</span>
                                 </label>
-                            <input class="input s3_input2" name="s3_form_input2" form="s3_form_d1" >
+                            <input class="input s3_input2" name="s3_form_input2" form="s3_form" >
 
                             <div class="s3_rectangle"></div>
                         </div>
@@ -186,7 +184,14 @@
                         </label>
                     </div>
                 </form>
+            </div>
+            
+
+        </section>
+        
                 
+        <section class="section s3-1">
+            <div class="s3_main">
                 <div class="s3_types">
                     <div class="s3_types_title title uc">TYPES OF REPAIR</div>
 
@@ -199,7 +204,9 @@
 
                 <div class="s3_view">
                     <div class="s3_view_block">
-                        <img src="images/s3_view_1.jpg">
+                        <div class="s3_view_img s3_view_img1">
+                            <!-- <img src="images/s3_view_1.jpg"> -->
+                        </div>
 
                         <div class="s3_view_block_li">
                             <span class="title s3_ul_title">Redecorating</span>
@@ -217,7 +224,9 @@
                     </div>
 
                     <div class="s3_view_block">
-                        <img src="images/s3_view_2.jpg">
+                        <div class="s3_view_img s3_view_img2">
+                            <!-- <img src="images/s3_view_2.jpg"> -->
+                        </div>
 
                         <div class="s3_view_block_li">
                             <span class="title s3_ul_title">Overhaul</span>
@@ -235,7 +244,9 @@
                     </div>
                     
                     <div class="s3_view_block">
-                        <img src="images/s3_view_3.jpg">
+                        <div class="s3_view_img s3_view_img3">
+                            <!-- <img src="images/s3_view_3.jpg"> -->
+                        </div>
 
                         <div class="s3_view_block_li">
                             <span class="title s3_ul_title">Designer Repair</span>
@@ -254,8 +265,6 @@
 
                 </div>
             </div>
-            
-
         </section>
 
         <section class="section s4" id="nav_team">
@@ -282,13 +291,13 @@
                         <div class="s4_b1_black_title">Leave a request for free<br>
                             departure of the measurer</div>
                             
-                            <div class="s4_b1_black_form">
+                            <form class="s4_form" id="s4_form">
                                 <div>
                                         <label for="s4_form_input" class="s4_label">
                                             Name:
                                             <br> <span class="s4_label_span">What is your name:</span>
                                         </label>
-                                    <input class="input s3_input1" name="s4_form_input" form="s4_b1_black_form" >
+                                    <input class="input s3_input1" name="s4_form_input" form="s4_form" >
                                     
                                     <div class="s4_rectangle"></div>
                                 </div>
@@ -298,7 +307,7 @@
                                             Phone:
                                             <br> <span class="s4_label_span">Your phone number:</span>
                                         </label>
-                                    <input class="input s3_input1" name="s4_form_input" form="s4_b1_black_form" >
+                                    <input class="input s3_input1" name="s4_form_input" form="s4_form" >
                                     
                                     <div class="s4_rectangle"></div>
                                 </div>
@@ -308,15 +317,15 @@
                                             Email:
                                             <br> <span class="s4_label_span">Your email</span>
                                         </label>
-                                    <input class="input s3_input1" name="s4_form_input" form="s4_b1_black_form" >
+                                    <input class="input s3_input1" name="s4_form_input" form="s4_form" >
                                     
                                     <div class="s4_rectangle"></div>
                                 </div>
-                            </div>
+                            </form>
                             
                         <div class="s4_check_div">
                             <label class="checkbox_container">I agree to the processing of personal<br> data
-                                <input type="checkbox" checked="checked" form="s4_b1_black_form">
+                                <input type="checkbox" checked="checked" form="s4_form">
                                 <span class="checkbox_custom"></span>
                             </label>
                         </div>
@@ -328,11 +337,9 @@
                 <div class="s4_pig_container">
                     <div class="s4_pig_round pos_rel">
                         <img class="s4_pig " src="images/vectors/s4_pig.svg">
-                        <img class="s4_pig_dollar" src="images/vectors/s4_dollar.svg">
-                        <img class="s4_pig_eye" src="images/vectors/s4_eye.svg">
                     </div>
                     <div class="s4_pig_desc color_1">
-                        Help save 10 - 20% of the 
+                        Help save 10 - 20% of the<br> 
                         cost of materials
                     </div>
                 </div>
@@ -364,30 +371,23 @@
                     <img class="s5_grid1" src="images/s5_grid1.png">
                     <img class="s5_grid2" src="images/s5_grid2.png">
                     <img class="s5_grid3" src="images/s5_grid3.png">
-                <div>
+                </div>
+
+                <div class="s5_grid0_hidden">
+                    <button class="s2_hidden_round b_styled">
+                        <img class="rotate_180" src="images/vectors/sign_more.svg">
+                    </button>
+                    <button class="s2_hidden_round b_styled">
+                        <img src="images/vectors/sign_more.svg">
+                    </button>
+                </div>
             </div>
         </section>
 
         <section class="section s6" id="nav_reviews">
             <div class="s6_title title uc">our clients</div>
             <div class="s6_title_icon">
-                <div class="s6_title_rectangle"></div>
-                <div class="s6_title_icon_main">
-                    <img class="s6_title_icon_img" src="images/vectors/s6_title_icon.svg">
-                    <img class="s6_title_icon_line1" src="images/vectors/s6_title_line1.svg">
-                    <img class="s6_title_icon_line2" src="images/vectors/s6_title_line2.svg">
-                    <img class="s6_title_icon_arrow1" src="images/vectors/s6_title_arrow.svg">
-                    <img class="s6_title_icon_arrow2" src="images/vectors/s6_title_arrow.svg">
-                    
-                    <div class="s6_title_round s6_round0"></div>
-                    <div class="s6_title_round s6_round1"></div>
-                    <div class="s6_title_round s6_round2"></div>
-                    <div class="s6_title_round s6_round3"></div>
-                    <div class="s6_title_round s6_round4"></div>
-                    <div class="s6_title_round s6_round5"></div>
-                    <div class="s6_title_round s6_round6"></div>
-                </div>
-                <div class="s6_title_rectangle"></div>
+                <img class="s6_title_icon_main" src="images/vectors/s6_title_icon.svg">
             </div>
             <div class="s6_title_desc">80% of our customers recommend us to their<br>
                 friends and family.</div>
@@ -468,7 +468,7 @@
 
         <section class="s7" id="nav_contacts">
             <div class="section s7_container">
-                <div class="s7_form">
+                <form class="s7_form" id="s7_form">
                     <div class="s7_form_title title uc">have any questions?</div>
                     <div class="s7_form_main">
                         <div class="s7_form_info">
@@ -477,7 +477,7 @@
                                         Name:
                                         <br> <span class="s4_label_span">What is your name:</span>
                                     </label>
-                                <input class="input s3_input2" name="s7_form_name" form="s7_form_main" >
+                                <input class="input s3_input2" name="s7_form_name" form="s7_form" >
                                 
                                 <div class="s7_form_rectangle1"></div>
                             </div>
@@ -487,7 +487,7 @@
                                         Phone:
                                         <br> <span class="s4_label_span">Your phone number:</span>
                                     </label>
-                                <input class="input s3_input2" name="s7_form_phone" form="s7_form_main" >
+                                <input class="input s3_input2" name="s7_form_phone" form="s7_form" >
                                 
                                 <div class="s7_form_rectangle1"></div>
                             </div>
@@ -500,28 +500,28 @@
                                         Question
                                         <br> <span class="s4_label_span">I want to know:</span>
                                     </label>
-                                <input class="input s7_input" name="s7_form_question" form="s7_form_main" >
+                                <input class="input s7_input" name="s7_form_question" form="s7_form" >
                                 
                                 <div class="s7_form_rectangle2"></div>
                             </div>
                         </div>
 
                         
-                        <div class="s3_check_div">
+                        <div class="s3_check_div  s7_check_div">
 
                             <label class="checkbox_container">I agree to the processing of personal<br> data
-                                <input type="checkbox" checked="checked" form="s7_form_main">
+                                <input type="checkbox" checked="checked" form="s7_form">
                                 <span class="checkbox_custom"></span>
                             </label>
                         </div>
                     </div>
                     
-                    <button class="s3_button s7_button uc b_styled" form="s3_form">Submit</button>
-                </div>
+                    <button class="s3_button s7_button uc b_styled" form="s7_form">Submit</button>
+                </form>
 
                 <div class="s7_bg">
-                    <div class="s7_bg_title title uc">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
-                        Decorum Tel +7 (928) 768 32 29</div>
+                    <div class="s7_bg_title title uc">Rostov-on-Don, Nansen St., 239 Shopping Center<br class="hidden_MOB">
+                        Decorum <br class="hidden">Tel +7 (928) 768 32 29</div>
                     <div class="s7_links">
                         <a class="s7_link" href="#">
                             <img src="images/vectors/s7_email.svg">
