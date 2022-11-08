@@ -785,6 +785,8 @@ button{
                 .s4_i1{
                     /* margin-top: -47px; */
                     /* margin-left: -303px; */
+                    height: 703px;
+                    width: 798px;
                     margin-left: 0;
                 }
                 .s4_b1_desc{
@@ -949,7 +951,12 @@ button{
                     margin: 8.44px 25px 0 0;
                     border-radius: 50px;
                     z-index: 1;
-                    padding: 19.48px 16px;
+                    /* padding: 19.48px 16px; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 76px;
+                    height: 76px;
                 }
                     .s4_pig{
                         height: 33.04px;
