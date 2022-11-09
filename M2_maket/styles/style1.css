@@ -36,6 +36,10 @@ body *{
 
 .input{
     border-style: none;
+    color: white;
+}
+.input_placeholder_black{
+    color: #363636;
 }
 
 input[type="button"]{
@@ -48,6 +52,14 @@ input[type="button"]{
     justify-content: center;
     align-items: center;
 }
+input::placeholder{
+    color: white;
+    font-size: 14px;
+    line-height: 23px;
+}
+    .input_placeholder_black::placeholder {
+        color: #363636;
+    }
 button{
     outline: 0px;
     color: white;
@@ -102,12 +114,12 @@ button{
     transform: rotate(180deg);
 }
 
-.b_styled:hover {
+.button_styled:hover {
     /* background-color: #E3B873cc; */
     opacity: 80%;
 }
 
-.b_styled:active {
+.button_styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
@@ -607,11 +619,9 @@ button{
                     margin-bottom: 35px;
                     position: relative;
                 }
-                    /* .s3_input1{
-                        width: calc(231px - 122.2px - 4px);
-                    } */
-                    .s3_input2{
-                        width: calc(231px - 126.16px - 4px);
+                    .s3_input1{
+                        /* width: calc(231px - 126.16px - 4px); */
+                        width: 231px;
                         background-color: transparent;
                     }
 
@@ -881,8 +891,8 @@ button{
                             flex-direction: column;
                             justify-content: space-between;
                         }
-                            .s3_input1{
-                                width: auto;
+                            .s4_input1{
+                                width: 408px;
                                 background-color: transparent;
                             }
                                 .s4_label{
@@ -1296,7 +1306,7 @@ button{
                         margin-bottom: 46.46px;
                     }
                         .s7_input{
-                            width: calc(516.82px - 96.52px - 4px);
+                            width: 516.82px;
                             background-color: transparent;
                         }
                         .s7_form_rectangle2{

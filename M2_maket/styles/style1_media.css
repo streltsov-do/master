@@ -217,6 +217,12 @@
                 .s3_hidden_color2{
                     color: rgba(255, 255, 255, 0.5);
                 }
+                    .input_placeholder_black{
+                        color:white;
+                    }
+                    .input_placeholder_black::placeholder {
+                        color:white;
+                    }
 
                 .s3_rectangle{
                     width: 340px;
@@ -281,6 +287,10 @@
                 .s3_view_block_li{
                     margin-top: calc(-365.15px + 223px);
                     margin-top: calc(-365.15px + 223px);
+                }
+                .s3_input1{
+                    width: 340px;
+                    background-color: transparent;
                 }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -375,8 +385,11 @@
                 margin-bottom: 21.63px;
             }
                 .s7_input{
-                    width: calc(340px - 96.52px - 4px);
+                    width: 340px;
                     background-color: transparent;
+                }
+                .s7_form_rectangle1{
+                    width: 340px;
                 }
                 .s7_form_rectangle2{
                     width: 340px;
