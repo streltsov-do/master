@@ -264,6 +264,7 @@
             .s3_view_block{
                 align-items: flex-start;
                 height: 484px;
+                width: auto;
                 margin-bottom: 59px;
             }   
                 .s3_view_block_li{
@@ -371,7 +372,7 @@
         .s7_form{
             margin-top: 0;
             height: auto;
-            width:  auto;
+            width:  375px;
             padding: 52px 18px 0 18px;
             position: relative;
         }
@@ -405,6 +406,7 @@
 
         .s7_bg{
             height: auto;
+            width: 375px;
             margin: 0;
         }
         .s7_bg_title{
