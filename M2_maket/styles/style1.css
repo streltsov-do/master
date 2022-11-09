@@ -292,12 +292,12 @@ button{
         right: 0;
         left: 0;
         bottom: 0;
-        padding: 194px 627px 208px 134px;
     }
     
     .s1_title_container{ 
-        width: 676.11px;
-        height: 305px;
+        padding: 194px 627px 208px 134px;
+        /* width: 676.11px; */
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -322,7 +322,7 @@ button{
     .s1_title_buttons{
         display: flex;
         justify-content: space-between;
-        width: 424px;
+        width: 434px;
     }
         .s1_button{
             width: 207px;

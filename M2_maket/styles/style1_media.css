@@ -30,12 +30,14 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
         .s1{
             height: 476px;
+            width: 375px;
         }
-            .s1_overlay{
-                padding: 85px 18px 61px 18px;
-            }
+            /* .s1_overlay{
+            } */
                 .s1_title_container{
-                    height: calc(476px - 85px - 61px);
+                    height: 476px;
+                    padding: 85px 18px 61px 18px;
+                    width: 375px;
                 }
                     .s1_title{
                         font-size: 23px;
@@ -48,6 +50,7 @@
                     }
                     .s1_title_buttons{
                         height: calc(51px * 2 + 26px);
+                        width: auto;
                         flex-direction: column;
                     }   
                         .s1_button{
@@ -355,6 +358,7 @@
     .s7{
         background-image: none;
         height: calc(1074px + 121px);
+        width: 375px;
         position: relative;
     }
     .s7::before{
