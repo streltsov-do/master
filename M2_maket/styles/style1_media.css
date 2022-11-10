@@ -2,7 +2,7 @@
 
     /* header, footer */
         .container_nav{
-            width: calc(80vw - 20px);
+            width: calc(375px - 36px);
         }
         
         .nav_main{
@@ -30,7 +30,6 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
         .s1{
             height: 476px;
-            width: 375px;
         }
             /* .s1_overlay{
             } */
@@ -359,7 +358,6 @@
     .s7{
         background-image: none;
         height: calc(1074px + 121px);
-        width: 375px;
         position: relative;
     }
     .s7::before{
