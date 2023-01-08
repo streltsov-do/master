@@ -73,6 +73,7 @@ function slider_i(i) {
 
     idx=i;
     s2_slide.style.setProperty("background-image",`url(${slider_assets[idx]})`);
+    s2_slide_mobile.style.setProperty("background-image",`url(${slider_assets[idx]})`);
     
     slider_dots[idx].innerHTML = '<img class="s2_dot s2_dot_selected">';
     slider_desc[idx].classList.add('s2_btn_desc_selected');
