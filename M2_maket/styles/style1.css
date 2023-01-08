@@ -982,6 +982,7 @@ button{
                             z-index: 1;
                         }
             .s4_pig_container{
+                margin: 38.44px 0 0 32.5px;
                 align-self: flex-end;
                 display: flex;
             }
