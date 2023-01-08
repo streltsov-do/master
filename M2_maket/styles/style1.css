@@ -420,12 +420,16 @@ button{
     }
 
     .s2_slider{
-        background-image: url(../images/s2_i1.png);
+        /* background-image: url(../images/s2_i1.png); */
         height: 482px;
         width: 679px;
         position: absolute;
         margin-left: 492px; 
-        background-size: cover;
+        /* background-size: cover; */
+    }
+    .s2_slider_img{
+        height: 482px;
+        width: 679px;
     }
 
     .s2_p{

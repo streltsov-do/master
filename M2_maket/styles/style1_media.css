@@ -108,20 +108,43 @@
                             margin-bottom: 36px;
                         }
                     
+                        .s2_hidden_slider{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            /* padding: 0 14px; */
+                            position: relative;
+                            margin-left: 0; 
+                            height: 241.35px;
+                            width: 340px; 
+                            /* margin-bottom: ; */
+                        }
+                        .s2_slider_img_mobile{
+                            height: 241.35px;
+                            width: 340px; 
+                        }
                         .s2_hidden_prj_nav{
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                             padding: 0 14px;
                             position: relative;
-                            margin-left: 0; 
                             height: 241.35px;
                             width: 340px; 
-                            background-image: url(../images/s2_i2.png);
-                            background-size: contain;
-                            margin-bottom: 36.65px;
+                            margin: -241.35px 0 36.65px 0;
                         }
                             .s2_hidden_round{
+                                display: block;
+                                width:  36px;
+                                height: 36px;
+                                border-radius: 50px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-width: 0;
+                            }
+                            
+                            .s2_hidden_btn_next{
                                 display: block;
                                 width:  36px;
                                 height: 36px;
