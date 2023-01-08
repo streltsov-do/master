@@ -118,6 +118,7 @@
                             height: 241.35px;
                             width: 340px; 
                             background-image: url(../images/s2_i2.png);
+                            background-size: contain;
                             margin-bottom: 36.65px;
                         }
                             .s2_hidden_round{
@@ -149,7 +150,7 @@
                             display: none;
                         }
 
-                .s2_i1{
+                .s2_slider{
                     display: none;             
                 }
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
