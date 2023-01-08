@@ -57,12 +57,13 @@
                 <!-- <div class=""> -->
                     <nav>
                         <ul class="s2_nav title uc">
-                            <div >
+                            <!-- <div >
                                 <li class="nav_i_selected"> <a href="#">Rostov-on-Don, Admiral  </a></li>
                                 <div class="s2_line"></div>
-                            </div>
-                            <li class="s2_nav_i">          <a href="#">Sochi Thieves           </a></li>
-                            <li class="s2_nav_i">          <a href="#">Rostov-on-Don Patriotic </a></li>
+                            </div> -->
+                            <li class="s2_nav_i">          <button class="s2_btn_desc s2_btn_desc_0 title uc button_styled3 s2_btn_desc_selected"> Rostov-on-Don, Admiral  </button></li>
+                            <li class="s2_nav_i">          <button class="s2_btn_desc s2_btn_desc_1 title uc button_styled3">                      Sochi Thieves           </button></li>
+                            <li class="s2_nav_i">          <button class="s2_btn_desc s2_btn_desc_2 title uc button_styled3">                      Rostov-on-Don Patriotic </button></li>
                         </ul>
                     </nav>
                     
@@ -73,10 +74,10 @@
                                 <p class="s2_p">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                                 
                                 <div class="s2_hidden_prj_nav">
-                                    <button class="s2_hidden_round button_styled">
+                                    <button class="s2_hidden_round s2_hidden_btn_prev button_styled">
                                         <img class="rotate_180" src="images/vectors/sign_more.svg" alt="prev">
                                     </button>
-                                    <button class="s2_hidden_round button_styled">
+                                    <button class="s2_hidden_round s2_hidden_btn_next button_styled">
                                         <img src="images/vectors/sign_more.svg"  alt="next">
                                     </button>
                                 </div>
@@ -105,25 +106,31 @@
                             </div>
 
                             <div class="s2_prj_nav">
-                                <div class="rotate_180"> 
-                                    <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="prev"></a>
-                                </div>
+                                <button class="s2_btn_arrow s2_btn_arrow_prev button_styled2">
+                                    <div class="rotate_180 s2_arrow"> 
+                                        <!-- <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="prev"></a> -->
+                                        <img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="prev">
+                                    </div>
+                                </button>
                                     
                                 
                                     <div class="s2_dots">
-                                        <img class="s2_dot s2_dot_selected" >
-                                        <img class="s2_dot" >
-                                        <img class="s2_dot" >
+                                        <button class="s2_btn_dot s2_btn_dot_0 button_styled2">    <img class="s2_dot s2_dot_selected">    </button>
+                                        <button class="s2_btn_dot s2_btn_dot_1 button_styled2">    <img class="s2_dot">                    </button>
+                                        <button class="s2_btn_dot s2_btn_dot_2 button_styled2">    <img class="s2_dot">                    </button>
                                     </div>
 
-                                <div> 
-                                    <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="next"></a>
-                                </div>
+                                <button class="s2_btn_arrow s2_btn_arrow_next button_styled2">
+                                    <!-- <div>  -->
+                                        <!-- <a href="#" ><img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="next"></a> -->
+                                        <img class="s2_arrow"      src="images/vectors/s2_arrow.svg" alt="next">
+                                    <!-- </div> -->
+                                </button>
                             </div>
                         </div>
 
                         
-                        <div class="s2_i1"></div>
+                        <div class="s2_slider"></div>
                     </div>
                 <!-- </div> -->
             </section>
@@ -543,6 +550,8 @@
             </div>
         </section>
 
+        
+        <script src="./scripts/s2_slider.js"></script>
     </main>
 
     <footer>
